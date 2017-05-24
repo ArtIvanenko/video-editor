@@ -1,0 +1,16 @@
+<div class="logo-container">
+	<span class="error" ng-class="{'active': signinCtrl.error}">{{'BS20_NOT_ABLE_TO_SIGNIN' | translate}}</span>
+	<div class="hold-form">
+		<form name="signinForm" ng-class="{'errorForm': signinCtrl.emptyField}">
+			<div class="holder">
+				<div class="hold-input">
+					<input type="text" name="email" ng-model="signinCtrl.user.email" required placeholder="{{'USERNAME' | translate}}">
+				</div>
+				<div class="hold-input">
+					<input type="password" name="pass" ng-model="signinCtrl.user.password" required placeholder="{{'PASSWORD' | translate}}">
+				</div>
+			</div>
+			<button type="submit" ng-click="signinCtrl.signin()">{{'LOGIN' | translate}}</button>
+		</form>
+	</div>
+</div>

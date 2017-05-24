@@ -1,0 +1,19 @@
+{
+	"USERNAME": "Nom d'utilisateur",
+	"PASSWORD": "Mot de passe",
+	"LOGIN": "Se connecter",
+	"BS20_NOT_ABLE_TO_SIGNIN": "Nom d'utilisateur ou mot de passe incorrect, veuillez réessayer",
+	"BS2_SELECT_VIDEOS": "Sélectionner des vidéos",
+	"BS2_RESTART": "Recommencer",
+	"BS2_RECORD": "Enregistrer une vidéo",
+	"TOTAL_LENGTH_MUST_BE_MORE_THAN_MINIMUM": "La durée total des vidéos doit être d'au moins 20 secondes",
+	"TOTAL_LENGTH_MUST_BE_LESS_THAN_MAXIMUM": "La durée total des vidéos doit être inférieur à 10 minutes",
+	"EDITING_STATE": "Montage",
+	"LOADING_STATE": "Chargement",
+	"S5_YOUTUBE": "Youtube",
+	"S5_FACEBOOK": "Facebook",
+	"ERROR_DURING_FILE_UPLOAD_1": "Une erreur est survenue lors de l'envoi des fichiers",
+	"ERROR_DURING_FILE_UPLOAD_2": "vérifier votre connection internet ou contactez-nous à support@klap.video",
+	"ERROR_DURING_FILE_EDITINGS_1": "Une erreur est survenue lors de l'édition des fichiers",
+	"ERROR_DURING_FILE_EDITINGS_2": "vérifier votre connection internet ou contactez-nous à support@klap.video"
+}

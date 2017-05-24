@@ -1,0 +1,15 @@
+{
+	"USERNAME": "Nombre de usuario",
+	"PASSWORD": "Contraseña",
+	"LOGIN": "Login",
+	"BS20_NOT_ABLE_TO_SIGNIN": "Nombre de usuario o contraseña inválido. Por favor intente de nuevo",
+	"BS2_SELECT_VIDEOS": "Selecciona videos",
+	"BS2_RESTART": "Reiniciar",
+	"BS2_RECORD": "Grabar",
+	"TOTAL_LENGTH_MUST_BE_MORE_THAN_MINIMUM": "El video debe tener más de 20 segundos",
+	"TOTAL_LENGTH_MUST_BE_LESS_THAN_MAXIMUM": "El video debe ser inferior a 10 minutos",
+	"EDITING_STATE": "Edición",
+	"LOADING_STATE": "Cargando",
+	"S5_YOUTUBE": "Youtube",
+	"S5_FACEBOOK": "Facebook"
+}

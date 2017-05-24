@@ -1,0 +1,181 @@
+.process-holder {
+	width: 100%;
+	height: 100%;
+	max-height: 1200px;
+	position: relative;
+	/*display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;*/
+}
+
+.wrap {
+	width: 500px;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.progress-line,
+.edit-line {
+	width: 100%;
+	max-width: 500px;
+	height: 19px;
+	position: relative;
+	background: #9cc7ff;
+	border-radius: 7px;
+	margin-bottom: 30px;
+}
+
+.edit-holder {
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+}
+
+.process-holder .progress {
+	width: 0;
+	height: 19px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #fff;
+	border-radius: 7px;
+	text-align: center;
+	z-index: 1
+}
+
+.persent {
+	z-index: 2;
+	color: #3b5e8b;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h3 {
+	font-size: 22px;
+	margin: 0 0 10px;
+	font-weight: 200;
+	color: #fff;
+}
+
+.edit-holder h3 {
+	margin-bottom: 20px;
+}
+
+.file-info {
+	display: block;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.process-holder .restart-btn {
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 19px;
+	color: #fff;
+	display: inline-block;
+	padding-top: 65px;
+	cursor: pointer;
+	position: absolute;
+    bottom: 85px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+	&:before {
+		content: '';
+		background: url(../assets/images/restart.png) no-repeat 0 0;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
+		transition: box-shadow .3s linear;
+	}
+
+	&:hover {
+		&:before {
+			box-shadow: 2px 2px 5px #000;
+		}
+	}
+}
+
+.loading-container {
+	position: absolute;
+	top: 55%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+	padding: 0 20px;
+}
+
+@media (max-width: 760px) {
+
+	// .process-holder {
+	// 	position: static;
+	// }
+
+	.loading-container {
+		top: 375px; 
+	}
+
+	.process-holder .restart-btn {
+		text-indent: -9999px;
+		padding-top: 39px;
+		cursor: pointer;
+	    bottom: auto;
+	    left: 32px;
+    	top: 15px;
+
+
+		&:before {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	.progress-line {
+		margin-bottom: 25px;
+	}
+
+	.file-info {
+		margin-bottom: 10px;
+	}
+
+}
+
+// @media (max-height: 525px) {
+// 	.process-holder .restart-btn {
+// 		bottom: 5%;
+// 	}
+// 	.loading-container {
+// 		top: 60%
+// 	}
+// 	.process-holder .restart-btn {
+// 		text-indent: -9999px;
+// 		padding-top: 39px;
+// 		cursor: pointer;
+// 	    bottom: auto;
+// 	    left: 32px;
+//     	top: 15px;
+
+
+// 		&:before {
+// 			width: 40px;
+// 			height: 40px;
+// 		}
+// 	}
+// }
+
+// @media (max-height: 420px) {
+// 	.process-holder .restart-btn {
+// 		bottom: 5%;
+// 	}
+// }

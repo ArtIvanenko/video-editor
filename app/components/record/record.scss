@@ -1,0 +1,118 @@
+.wrapper {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.hold-btn {
+	/*display: flex;
+	height: 100%;
+	width: 100%;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;*/
+
+	position: absolute;
+	bottom: 218px;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	#upload,
+	#record {
+		position: absolute;
+		overflow: hidden;
+		z-index: -1;
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+	}
+	
+	.record-btn,
+	.fileUpload {
+		font-size: 17px;
+		line-height: 19px;
+		color: #fff;
+		display: inline-block;
+		padding-top: 65px;
+		cursor: pointer;
+		position: relative;
+
+		&:before {
+			content: '';
+			background: url(../assets/images/select.png) no-repeat 0 0;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: 54px;
+			height: 54px;
+			border-radius: 50%;
+			transition: box-shadow .3s linear;
+		}
+
+		&:hover {
+			&:before {
+				box-shadow: 2px 2px 5px #000;
+			}
+		}
+	}
+
+	.record-btn {
+		padding-top: 65px;
+		text-decoration: none;
+		text-align: center;
+		margin-bottom: 0;
+		display: none;
+
+		&:before {
+			background: url(../assets/images/record.png) no-repeat 0 0;
+			background-size: contain;
+		}
+	}
+}
+
+@media (max-width: 760px) {
+	.hold-btn {
+		bottom: 61px;
+		.record-btn {
+			display: block;
+		}
+
+		.fileUpload {
+			margin-bottom: 30px;
+		}
+	}
+
+	.hold-btn {
+		.record-btn,
+		.fileUpload {
+			padding-top: 46px;
+			&:before {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+
+}
+
+@media (max-height: 910px) {
+	.hold-btn {
+		top: auto;
+		bottom: 10%;
+	}
+}
+
+@media (max-height: 500px) {
+	.hold-btn {
+
+		.record-btn,
+		.fileUpload {
+			margin-bottom: 8px;
+			padding-top: 55px;
+		}
+	}
+}

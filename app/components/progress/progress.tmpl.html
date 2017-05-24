@@ -1,0 +1,30 @@
+<div class="process-holder">
+	<span class="error" ng-class="{'active': progressCtrl.processData.errorUploadStatus}">
+		{{"ERROR_DURING_FILE_UPLOAD_1" | translate}} 
+		{{"ERROR_DURING_FILE_UPLOAD_2" | translate}}
+		</br>
+		{{progressCtrl.processData.errorCode}} {{progressCtrl.processData.errorText}}
+	</span>
+	<span class="error" ng-class="{'active': progressCtrl.processData.errorEditingStatus}">
+		{{"ERROR_DURING_FILE_EDITINGS_1" | translate}} 
+		{{"ERROR_DURING_FILE_EDITINGS_2" | translate}}
+		</br>
+		{{progressCtrl.processData.errorCode}} {{progressCtrl.processData.errorText}}
+	</span>
+	<div class="loading-container">
+		<h3>{{"LOADING_STATE" | translate}}</h3>
+		<span class="file-info">{{progressCtrl.processData.countFiles}} files selected ( {{progressCtrl.processData.totalDuration}} {{progressCtrl.processData.time}} )</span>
+		<div class="progress-line" ng-style="{'background': progressCtrl.progressBg}">
+			<span class="persent">{{progressCtrl.processData.progress}}%</span>
+			<span class="progress" ng-style="{ 'width': progressCtrl.processData.progress + '%'} "></span>
+		</div>
+		<div class="edit-holder" ng-if="progressCtrl.processData.editingStatus" >
+			<h3>{{"EDITING_STATE" | translate}}</h3>
+			<div class="edit-line" ng-style="{'background': progressCtrl.progressBg}">
+				<span class="persent">{{progressCtrl.processData.editingProcess}}%</span>
+				<span class="progress" ng-style="{ 'width': progressCtrl.processData.editingProcess + '%'}"></span>
+			</div>
+		</div>
+	</div>
+	<a href="" class="restart-btn" ng-click="progressCtrl.discard($event)">{{"BS2_RESTART" | translate}}</a>
+</div>

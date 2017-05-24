@@ -1,0 +1,9 @@
+<div class="wrapper">
+	<span class="error" ng-class="{'active': recordCtrl.recordData.status}">{{recordCtrl.recordData.errorText | translate}}</span>
+	<span class="error" ng-class="{'active': recordCtrl.recordData.expired}">{{recordCtrl.recordData.expiredText}}</span>
+	<div class="hold-btn">
+		<br-file-select></br-file-select>
+		<input type="file" id="record" accept="video/*;capture=camcorder">
+		<label for="record" class="record-btn">{{"BS2_RECORD" | translate}}</label>			
+	</div>
+</div>

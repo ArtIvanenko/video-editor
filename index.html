@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="brissot">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brissot video editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.min.css -->
+    <!-- <link rel="stylesheet" href="./dist/styles/main.min.css"> -->
+    <!-- endbuild -->
+    <base href="/">
+</head>
+
+<body ng-controller="MainCtrl as mainCtrl">
+    <div id="main" ng-class="mainCtrl.activeClass" >
+        <div class="bg-container">
+            <h1 class="logo" ng-bind="mainCtrl.title" ng-class="mainCtrl.client"></h1>
+            <span class="fade" ng-class="{'active': mainCtrl.showSpinner}"></span>
+            <span class="spinner" ng-class="{'active': mainCtrl.showSpinner}"></span>
+            <div class="container" ui-view ng-show="mainCtrl.isActive" >
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="../bower_components/angular-loader/angular-loader.min.js"></script>
+    <script src="../bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="../bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="../bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="../bower_components/ng-idle/angular-idle.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="./app/app.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

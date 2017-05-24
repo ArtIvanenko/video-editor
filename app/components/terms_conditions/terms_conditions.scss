@@ -1,0 +1,52 @@
+.t-c-box {
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	.icon {
+		text-decoration: none;
+		display: inline-block;
+		background: url(../assets/images/like.png) no-repeat 0 0;
+		background-size: cover;
+		width: 82px;
+		height: 82px;
+		position: relative;
+		cursor: pointer;
+		
+		svg {
+			position: absolute;
+			top: 98px;
+			left: 50%;
+			transform: translate(-50%, 0);
+
+			#shape {
+				fill: rgba(255, 255, 255, .6);
+			}
+		}
+
+		span {
+			position: absolute;
+			top: 100px;
+			left: 50%;
+			color: #325786;
+			transform: translate(-50%, 0);
+			font-size: 17px;
+			line-height: 22px;
+			text-align: center;
+			width: 246px;
+			padding: 17px 0;
+
+			&:after {
+				content: '';
+				width: 85%;
+				height: 1px;
+				position: absolute;
+				bottom: 19px;
+				left: 50%;
+				transform: translate(-50%, 0);
+				background-color: #325786;
+			}
+		}
+	}
+}

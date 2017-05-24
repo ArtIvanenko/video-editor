@@ -1,0 +1,20 @@
+<div class="video-container">
+	<video id="video" autoplay controls>
+		<source ng-src="{{vm.src}}" type="video/mp4">
+	</video>
+	<!-- <div id="videoControls">
+		<span class="past-time"></span>
+		<span class="all-time"></span>
+		<div class="progress">
+			<progress id="progress" value="0" min="0"></progress><span id="progress-bar"></span>
+		</div>
+	</div> -->
+	<div class="hold-btn">
+		<a href="#" ng-click="vm.restart($event)" class="restart-btn">{{"BS2_RESTART" | translate}}</a>
+		<div class="hold-social-btn">
+			<a href="#" class="tube-btn">{{"S5_YOUTUBE" | translate}}</a>
+			<a href="#" class="fb-btn">{{"S5_FACEBOOK" | translate}}</a>
+		</div>
+	</div>
+</div>
+
